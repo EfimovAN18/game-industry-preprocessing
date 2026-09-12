@@ -25,4 +25,33 @@
 
 ## Структура репозитория
 
-* `game_indust_
+* `game_industry_preprocessing.ipynb` — выполненная Jupyter Notebook с кодом, результатами и выводами;
+* `new_games.csv` — исходный датасет;
+* `requirements.txt` — зависимости проекта.
+
+## Основные результаты
+
+После предобработки осталось 16 444 строки. Актуальный срез за 2000–2013 годы содержит 12 781 запись.
+
+Топ-7 платформ по количеству выпущенных игр:
+
+1. PS2
+2. DS
+3. Wii
+4. PSP
+5. X360
+6. PS3
+7. GBA
+
+Подготовленные данные можно использовать для дальнейшего анализа игровых платформ, жанров, региональных продаж и RPG-игр.
+
+## Запуск проекта
+
+```bash
+git clone https://github.com/EfimovAN18/game-industry-preprocessing.git
+cd game-industry-preprocessing
+pip install -r requirements.txt
+jupyter notebook game_industry_preprocessing.ipynb
+```
+
+Источник данных: [Яндекс Практикум](https://code.s3.yandex.net/datasets/new_games.csv).
